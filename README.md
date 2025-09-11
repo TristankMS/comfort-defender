@@ -11,12 +11,12 @@ Then create a new script and copy and paste from the source here. Edit if you li
 
 # Scripts
 
-- **Defender navigation pane (sic) helper** - a floating favourites bar right next to the hamburger menu!*
+- **[Defender navigation pane (sic) helper](https://github.com/TristankMS/comfort-defender/blob/main/navpain.js)** - a floating favourites bar right next to the hamburger menu!*
  	<img width="277" height="76" alt="image" src="https://github.com/user-attachments/assets/3e0af564-a309-4cc5-a893-87cc9ac634a3" />
     - Add or remove or reorder your own!
 	- *Win fabulous prizes***!
    
-- **Security Center Auto Refresh on Idle (SCARi)** - refreshes the Incidents view if the page is idle.
+- **[Security Center Auto Refresh on Idle](https://github.com/TristankMS/comfort-defender/blob/main/autorefresh.js) (SCARi)** - refreshes the Incidents view if the page is idle.
 	- Configure your own interval!
  	- I have no other advice! maybe "It says v0.5 but works like a 1.0"?
 
