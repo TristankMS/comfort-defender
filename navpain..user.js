@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Defender navigation pane (sic) helper
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.0.2
 // @description  The (floating) favourites bar *they* didn't want you to have. It's a conspiracy!
 // @match        https://security.microsoft.com/*
 // @grant        none

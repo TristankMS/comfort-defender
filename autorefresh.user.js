@@ -2,11 +2,11 @@
 // @name         Security Center Auto Refresh (on Idle) - SCARi for Defender
 // @namespace    https://security.microsoft.com/
 // @description  tries to automate the Security Incident refresh button when idle
-// @version      0.5.1
+// @version      0.5.2
 // @match        https://security.microsoft.com/incidents?*
 // @grant        none
 // @run-at       document-idle
-// @downloadURL  https://raw.githubusercontent.com/TristankMS/comfort-defender/refs/heads/main/autorefresh.js
+// @downloadURL  https://raw.githubusercontent.com/TristankMS/comfort-defender/refs/heads/main/autorefresh.user.js
 // ==/UserScript==
 
 (function() {
