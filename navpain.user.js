@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         Defender navigation pane (sic) helper
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.0.2
 // @description  The (floating) favourites bar *they* didn't want you to have. It's a conspiracy!
 // @match        https://security.microsoft.com/*
 // @grant        none
+// @downloadURL  https://raw.githubusercontent.com/TristankMS/comfort-defender/refs/heads/main/navpain.js
 // ==/UserScript==
 
 (function() {
@@ -32,8 +33,8 @@
         left: '50px',
         background: '#585654', // dark grey Defender-like background
         color: '#ffffff',
-        padding: '6px 10px',
-        borderRadius: '6px',
+        padding: '5px 8px',
+        borderRadius: '5px',
         fontSize: '14px',
         zIndex: 99999,
         whiteSpace: 'nowrap',
@@ -46,7 +47,7 @@
     bar.querySelectorAll('a').forEach(a => {
         a.style.color = '#ffffff'; // white text
         a.style.textDecoration = 'none';
-        a.style.margin = '0 5px';
+        a.style.margin = '0 4px';
     });
 
     // Style separators
