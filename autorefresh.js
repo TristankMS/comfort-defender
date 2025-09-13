@@ -6,6 +6,7 @@
 // @match        https://security.microsoft.com/incidents?*
 // @grant        none
 // @run-at       document-idle
+// @downloadURL  https://raw.githubusercontent.com/TristankMS/comfort-defender/refs/heads/main/autorefresh.js
 // ==/UserScript==
 
 (function() {
