@@ -5,6 +5,7 @@
 // @description  The (floating) favourites bar *they* didn't want you to have. It's a conspiracy!
 // @match        https://security.microsoft.com/*
 // @grant        none
+// @downloadURL  https://raw.githubusercontent.com/TristankMS/comfort-defender/refs/heads/main/navpain.js
 // ==/UserScript==
 
 (function() {
