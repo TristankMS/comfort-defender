@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Defender navigation pane (sic) helper
 // @namespace    http://tampermonkey.net/
-// @version      1.0.2
+// @version      1.1
 // @description  The (floating) favourites bar *they* didn't want you to have. It's a conspiracy!
 // @match        https://security.microsoft.com/*
 // @grant        none
@@ -12,19 +12,19 @@
     'use strict';
 
     const favourites = [
-        { name: "Inc", url: "https://security.microsoft.com/incidents" },
-        { name: "Log", url: "https://security.microsoft.com/hunting" },
-        { name: "Lak", url: "https://security.microsoft.com/lake-explorer" },
-        { name: "Alr", url: "https://security.microsoft.com/alerts" },
-        { name: "Det", url: "https://security.microsoft.com/custom_detection" },
-        { name: "Ana", url: "https://security.microsoft.com/sentinel/analytics" },
-        { name: "Wrk", url: "https://security.microsoft.com/sentinel/workbooks"}
+        { name: "INC", url: "https://security.microsoft.com/incidents", tip: "Incidents" },
+        { name: "Alr", url: "https://security.microsoft.com/alerts", tip: "Alerts" },
+        { name: "Wbk", url: "https://security.microsoft.com/sentinel/workbooks", tip: "Workbooks"},
+        { name: "LOG", url: "https://security.microsoft.com/hunting", tip: "Advanced Hunting/Logs" },
+        { name: "Lak", url: "https://security.microsoft.com/lake-explorer", tip: "KQL Lake Explorer" },
+        { name: "DET", url: "https://security.microsoft.com/custom_detection", tip: "Custom Detections" },
+        { name: "Ana", url: "https://security.microsoft.com/sentinel/analytics", tip: "Analytics Rules" }
     ];
 
     const bar = document.createElement('div');
     bar.id = 'favBar';
     bar.innerHTML = favourites
-        .map(f => `<a href="${f.url}">${f.name}</a>`)
+        .map(f => `<a href="${f.url}" title="${f.tip}">${f.name}</a>`)
         .join('<span class="sep"> | </span>');
 
     Object.assign(bar.style, {
